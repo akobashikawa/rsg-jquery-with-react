@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Site</title>
+</head>
+<body>
+	<h1>My Site</h1>
+	<input type="text" placeholder="Name" class="js-hello-input">
+	<button class="js-hello-btn">Hello</button>
+	<div class="js-hello-output"></div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$('.js-hello-btn').on('click', () => {
+			const name = $('.js-hello-input').val();
+			$('.js-hello-output').html('<h2> Hello ' + name + '! </h2>');
+		});
+	</script>
+</body>
+</html>
