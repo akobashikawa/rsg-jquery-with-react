@@ -7,23 +7,12 @@
 <body>
 	<h1>My Site</h1>
 
-	<input type="text" placeholder="Name" class="js-hello-input">
-	<button class="js-hello-btn">Hello</button>
-	<div class="js-hello-output"></div>
-
 	<div id="root"></div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-
-	<script>
-		$('.js-hello-btn').on('click', () => {
-			const name = $('.js-hello-input').val();
-			$('.js-hello-output').html('<h2> Hello ' + name + '! </h2>');
-		});
-	</script>
 
 	<script type="text/babel">
 		class Hello extends React.Component {
